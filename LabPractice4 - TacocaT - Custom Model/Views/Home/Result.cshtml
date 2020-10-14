@@ -1,0 +1,41 @@
+﻿@model LabPractice4___TacocaT___Custom_Model.Models.TacocaTModel
+
+@{
+    ViewData["Title"] = "Result";
+}
+<style>
+    body {
+        background-color: #85FFBD;
+        background-image: linear-gradient(0deg, #85FFBD 46%, #FFFB7D 100%);
+    }
+</style>
+<h1>Result</h1>
+
+<div>
+    <h4>TacocaTModel</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.UserInput)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.UserInput)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.ReverseWord)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.ReverseWord)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Result)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Result)
+        </dd>
+    </dl>
+</div>
+<div>
+    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+    <a asp-action="Index">Back to List</a>
+</div>
